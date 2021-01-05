@@ -354,9 +354,9 @@ dependencies = [
 
 [[package]]
 name = "lorry"
-version = "0.1.3"
+version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ba14298f1b75f40c89aa52b336c7a0655c51738fcddd0decb3ede7ed3135ee27"
+checksum = "3529d8ce050ea08f714fe1961568b75dd97733192c4f925e2315939aafc06667"
 dependencies = [
  "ansi_term 0.12.1",
  "toml_edit",
@@ -364,7 +364,7 @@ dependencies = [
 
 [[package]]
 name = "lorry-cli"
-version = "0.1.3"
+version = "0.1.4"
 dependencies = [
  "ansi_term 0.12.1",
  "clap",
