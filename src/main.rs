@@ -46,7 +46,6 @@ fn init(a: &ArgMatches) {
 
 
 }
-#[cfg(debug_assertions)]
 fn error(reason: &str) -> ! {
     eprintln!(
         "{}: {}",
