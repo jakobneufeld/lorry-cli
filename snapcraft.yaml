@@ -18,8 +18,8 @@ base: core18
 parts:
   lorry-cli:
     plugin: rust
-    source: https://github.com/jakobneufeld/lorry-cli
+    source: https://github.com/jakobneufeld/lorry-cli.git
 
 apps:
   lorry-cli:
-    command: bin/xsv
+    command: bin/lorry-cli
