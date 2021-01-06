@@ -1,6 +1,6 @@
 [package]
 name = "lorry-cli"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2018"
 build = "spec.rs"
 author = "Jakob Neufeld"
@@ -12,7 +12,7 @@ description = "A cli for lorry"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [build_dependencies]
-lorry = "0.1.5"
+lorry = "0.1.6"
 [dependencies]
 clap = "2.33.3"
 git2 = "0.13.15"
