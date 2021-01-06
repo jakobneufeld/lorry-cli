@@ -1,5 +1,5 @@
 name: lorry-cli
-version: '1.0'
+version: '1.1'
 summary: A fast CSV command line toolkit written in Rust
 description: |
   xsv is a command line program for indexing,
