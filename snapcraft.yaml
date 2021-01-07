@@ -1,25 +1,23 @@
-name: lorry-cli
-version: '1.1'
-summary: A fast CSV command line toolkit written in Rust
+
+name: lorry-cli # you probably want to 'snapcraft register <name>'
+base: core18 # the base snap is the execution environment for this snap
+version: '1' # just for humans, typically '1.2+git' or '1.3.2'
+summary: Single-line elevator pitch for your amazing snap # 79 char long summary
 description: |
-  xsv is a command line program for indexing,
-  slicing, analyzing, splitting and joining CSV
-  files. Commands should be simple, fast and
-  composable:
-  - Simple tasks should be easy.
-  - Performance trade offs should be exposed
-    in the CLI interface.
-  - Composition should not come at the
-    expense of performance.
-
-confinement: devmode
-base: core18
-
+  This is my-snap's description. You have a paragraph or two to tell the
+  most important story about your snap. Keep it under 100 words though,
+  we live in tweetspace and your description wants to look good in the snap
+  
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: classic # use 'strict' once you have the right plugs and slots
 parts:
-  lorry-cli:
+  lorry:
+    build-packages:
+      - pkg-config
+      - libssl-dev
+      - openssl
     plugin: rust
     source: .
-
 apps:
-  lorry-cli:
+  lorry:
     command: bin/lorry-cli
